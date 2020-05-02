@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+.button-buy{
+  @apply absolute bg-orange-500 rounded-full h-20 w-20 flex items-center text-base text-white justify-center
+}
+@tailwind utilities;
