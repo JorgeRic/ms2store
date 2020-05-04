@@ -9,8 +9,9 @@
       text-3xl"
       >
         <router-link to="/"
-          ><span class="font-bold">M2E</span><span>SHOP</span></router-link
-        >
+          ><span class="font-bold">M2E</span><span>SHOP</span>
+        </router-link>
+        <router-link to="/movil">Traductor</router-link>
       </div>
 
       <div :snackbar="!snackbar" :timeout="timeout">

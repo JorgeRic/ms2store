@@ -18,12 +18,14 @@ export default new Vuex.Store({
   },
   mutations: {
     SET_PRODUCTS(state, products) {
-      // Fijamos el stock en el products reduciendo el stock del selectionProducts
-      state.selectionProducts.forEach(cartProduct => {
-        let productToUpdate = products.find(p => p.id === cartProduct.id);
+      // Fijamos el stock en el products igualando su stock al stock del selectionProducts
+      state.selectionProducts.forEach(select => {
+        let productToUpdate = products.find(
+          product => product.id === select.id
+        );
 
         if (productToUpdate) {
-          productToUpdate.stock = cartProduct.stock;
+          productToUpdate.stock = select.stock;
         }
       });
       // Creo una nueva key value para arreglar el reset
