@@ -11,7 +11,8 @@
         <router-link to="/"
           ><span class="font-bold">M2E</span><span>SHOP</span>
         </router-link>
-        <router-link to="/movil">Traductor</router-link>
+        <router-link class="mx-5" to="/movil">Traductor</router-link>
+        <router-link to="/pares">Pares</router-link>
       </div>
 
       <div :snackbar="!snackbar" :timeout="timeout">

@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Cart from "../views/Cart.vue";
 import Movil from "../views/Movil.vue";
+import Pares from "../views/Pares.vue";
 
 Vue.use(VueRouter);
 
@@ -21,6 +22,11 @@ const routes = [
     path: "/movil",
     name: "Movil",
     component: Movil
+  },
+  {
+    path: "/pares",
+    name: "Pares",
+    component: Pares
   }
 ];
 
